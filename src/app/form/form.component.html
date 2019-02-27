@@ -1,0 +1,40 @@
+<form (ngSubmit)="addLog(logForm)" novalidate #logForm="ngForm">
+  <div class="form-group">
+    <label for="logTitle"><strong>Add new log</strong></label>
+    <input type="text" name="title" ngModel class="form-control" id="logTitle" placeholder="Log title" required>
+  </div>
+
+  <div class="form-group" for="logMessage">
+    <textarea type="text" name="message" ngModel class="form-control" id="logMessage" rows="3" placeholder="Log message" required></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-outline-secondary"><i class="far fa-comment-alt"></i>Submit Log</button>
+</form>
+
+<!-- <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown
+    </button>
+    <div class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+      <button class="dropdown-item" type="button">Action</button>
+      <button class="dropdown-item" type="button">Another action</button>
+      <button class="dropdown-item" type="button">Something else here</button>
+    </div>
+  </div> -->
+
+<div class="logCard">
+  <div class="card" *ngFor="let log of log; let i=index">
+    <div class="card-body">
+      <h4 class="card-title">{{log.title}}</h4>
+      <p class="card-text">{{log.message}}</p>
+      <p>{{date | date: 'medium'}}</p>
+      <button id="delete" class="btn btn-link" (click)="deleteLog(i)">Delete</button>
+
+    </div>
+  </div>
+</div>
+
+
+<script>
+    
+</script>

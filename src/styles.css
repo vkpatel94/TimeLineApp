@@ -71,6 +71,12 @@
     margin-left: 0;
 }
 
+#search {
+    width: 50%;
+    margin-left: 25%;
+    border: 2px solid;
+}
+
 
 @media (min-width: 576px) {
     #title {

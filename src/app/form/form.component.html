@@ -12,7 +12,7 @@
 
 
 <div class="logCard" id="changeCSS">
-  <input class="form-control" [(ngModel)]="searchText" placeholder="search text goes here" *ngIf="logs.length > 0">
+  <input class="form-control" id="search" [(ngModel)]="searchText" placeholder="search text goes here" *ngIf="logs.length > 0">
   <div class="card" *ngFor="let log of logs | searchfilter: searchText ; let i=index">
     <div class="card-body">
       <h4 class="card-title">{{log.title}}</h4>

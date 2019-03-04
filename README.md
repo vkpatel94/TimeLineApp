@@ -22,5 +22,5 @@ Also I have added two small features from my side as mentioaned below:
 
 2. Also I have added a search feature using which you can search for specific log in the list. For now you can `search by title`, in future which can be extended by adding more options like search by date, search by range of dates etc.
 
-##More Info
+## More Info
 You can reach me at vaikunth.patel94@gmail.com if you need more information.
